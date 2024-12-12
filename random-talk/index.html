@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Talks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            background-color: rgb(234, 190, 46);
+            height: 70px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        textarea {
+            display: block;
+            width: 75vw;
+            height: 15vh;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid black;
+            font-size: 1.5rem;
+        }
+
+        #output {
+            width: 75vw;
+            height: 15vh;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+        .btn {
+            width: 75vw;
+            margin: auto;
+        }
+
+        #btn-translate {
+            padding: 1rem 2.5rem;
+            background-color: rgb(234, 190, 46);
+            text-align: center;
+
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            margin-left: 140px;
+            margin-top: 30px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #output {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Random Talks</h2>
+    <textarea name="" id="input" placeholder="Input your text here"></textarea>
+    <div class="btn">
+        <button id="btn-translate">Translate</button>
+    </div>
+    <h3>Output will come here 👇</h3>
+    <div id="output"></div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
