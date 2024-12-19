@@ -57,34 +57,34 @@ input.addEventListener('click', () => {
 
 
 
-addButton.addEventListener("click", () => {
-    console.log("Button clicked");
+// addButton.addEventListener("click", () => {
+//     console.log("Button clicked");
 
-    const task = inputTask.value.trim();
-    console.log(task);
+//     const task = inputTask.value.trim();
+//     console.log(task);
 
-    const li = document.createElement('li');
-    li.innerHTML = task;
-    list.appendChild(li);
-    li.style.display = "flex"; // Add flexbox for spacing
-    li.style.justifyContent = "space-between";
-    li.style.alignItems = "center";
-    li.style.marginBottom = "10px";
-
-
-    // Remove functionality
-    const removeBtn = document.createElement('button');
-    removeBtn.textContent = "Remove";
-    removeBtn.style.marginLeft = "10px";
-    removeBtn.style.color = "black";
-
-    removeBtn.addEventListener("click", () => {
-        list.removeChild(li);
-    })
-
-    li.appendChild(removeBtn)
+//     const li = document.createElement('li');
+//     li.innerHTML = task;
+//     list.appendChild(li);
+//     li.style.display = "flex"; // Add flexbox for spacing
+//     li.style.justifyContent = "space-between";
+//     li.style.alignItems = "center";
+//     li.style.marginBottom = "10px";
 
 
+//     // Remove functionality
+//     const removeBtn = document.createElement('button');
+//     removeBtn.textContent = "Remove";
+//     removeBtn.style.marginLeft = "10px";
+//     removeBtn.style.color = "black";
 
-    inputTask.value = "";
-})
+//     removeBtn.addEventListener("click", () => {
+//         list.removeChild(li);
+//     })
+
+//     li.appendChild(removeBtn)
+
+
+
+//     inputTask.value = "";
+// })
