@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #efeae3;
+}
+
+.page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+    padding: 0vw 2vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5vw 0;
+}
+
+.nav-part-2 {
+    display: flex;
+}
+
+.nav-part-2 h4 {
+    border: 1px solid #917e78dc;
+    margin: 0 7px;
+    border-radius: 50px;
+    padding: 13px 21px;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    font-family: Helvetica, sans-serif;
+}
+
+.nav-part-2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+.nav-part-2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+.nav-part-2 h4 a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+
+.nav-part-2 h4:hover a {
+    color: #fff;
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    height: 77vh;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #bfbbb6;
+    padding-bottom: 9vh;
+    /* background-color: orange; */
+}
+
+.left h3 {
+    font-family: sans-serif;
+    width: 63%;
+    padding-left: 1vw;
+    font-size: 1.9vw;
+    line-height: 1.2;
+}
+
+.right h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 10vw;
+    text-align: end;
+    line-height: 82%;
+    padding-right: 1vw;
+    font-weight: 900;
+}
+
+video {
+    margin-top: 8vh;
+    width: 100%;
+    border-radius: 27px;
+    position: relative;
+}
+
+.hero-shape {
+    position: absolute;
+    height: 36vw;
+    width: 46vw;
+    right: 0;
+    padding-top: 10px;
+    top: 80vh;
+}
+
+.hero1 {
+    width: 100%;
+    height: 100%;
+    background-color: #fe320a;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+.hero2 {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation: anime2 4s linear 1s infinite alternate;
+}
+.hero3 {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fe320a;
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation: anime1 4s linear 1s infinite alternate;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+.page2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 8vw 0;
+    font-family: "DM Sans", sans-serif;
+    background-color: #efeae3;
+}
+
+.moving-text {
+    font-size: 4vw;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 10s linear infinite;
+}
+.con h1 {
+    display: inline-block;
+}
+
+.gola {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #fe320a;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+.page2bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20vw 6vw;
+    height: 80vh;
+    gap: 20px;
+    background-color: #efeae3;
+}
+
+.page2bottom h1 {
+    font-size: 3.9vw;
+    z-index: 9;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 900;
+    line-height: 4vw;
+}
+
+.part1 {
+    width: 63%;
+}
+
+.part2 {
+    padding-top: 41vh;
+    padding-right: 1vw;
+    width: 22%;
+}
+
+.part2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-bottom: 3vw;
+}
+
+.circle {
+    position: absolute;
+    width: 32vw;
+    height: 32vw;
+    top: 70%;
+    left: 27%;
+    border-radius: 50%;
+    background-color: #ff9831;
+    filter: blur(10px);
+}
+
+.circle1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ff9831;
+    filter: blur(10px);
+    animation-name: circle1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.circle2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fe330a;
+    filter: blur(50px);
+    animation-name: circle2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(50%, 10%);
+    }
+    to {
+        transform: translate(0%, -10%);
+    }
+}
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+    to {
+        transform: translate(20%, 30%);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
